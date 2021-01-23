@@ -141,6 +141,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "152. Maximum Product Subarr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "160. Intersection of Two Linked Lists", "..\160. Intersection of Two Linked Lists\160. Intersection of Two Linked Lists.vcxproj", "{0C637C9F-258F-4025-B2C1-99FFD20BF90B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "141. Linked List Cycle", "..\141. Linked List Cycle\141. Linked List Cycle.vcxproj", "{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -701,6 +703,14 @@ Global
 		{0C637C9F-258F-4025-B2C1-99FFD20BF90B}.Release|x64.Build.0 = Release|x64
 		{0C637C9F-258F-4025-B2C1-99FFD20BF90B}.Release|x86.ActiveCfg = Release|Win32
 		{0C637C9F-258F-4025-B2C1-99FFD20BF90B}.Release|x86.Build.0 = Release|Win32
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Debug|x64.ActiveCfg = Debug|x64
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Debug|x64.Build.0 = Debug|x64
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Debug|x86.ActiveCfg = Debug|Win32
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Debug|x86.Build.0 = Debug|Win32
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Release|x64.ActiveCfg = Release|x64
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Release|x64.Build.0 = Release|x64
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Release|x86.ActiveCfg = Release|Win32
+		{206B8FF4-EBEE-4E73-81D1-68E165FC8FAA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
