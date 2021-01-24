@@ -147,6 +147,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "23. Merge k Sorted Lists", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "139. Word Break", "..\139. Word Break\139. Word Break.vcxproj", "{E24EEC53-34C6-49C2-BABC-1AD6B3D21767}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "56. Merge Intervals", "..\56. Merge Intervals\56. Merge Intervals.vcxproj", "{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -731,6 +733,14 @@ Global
 		{E24EEC53-34C6-49C2-BABC-1AD6B3D21767}.Release|x64.Build.0 = Release|x64
 		{E24EEC53-34C6-49C2-BABC-1AD6B3D21767}.Release|x86.ActiveCfg = Release|Win32
 		{E24EEC53-34C6-49C2-BABC-1AD6B3D21767}.Release|x86.Build.0 = Release|Win32
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Debug|x64.ActiveCfg = Debug|x64
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Debug|x64.Build.0 = Debug|x64
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Debug|x86.ActiveCfg = Debug|Win32
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Debug|x86.Build.0 = Debug|Win32
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Release|x64.ActiveCfg = Release|x64
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Release|x64.Build.0 = Release|x64
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Release|x86.ActiveCfg = Release|Win32
+		{44BA636B-ECF6-4509-9F13-6FEB3A5B6B5A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
