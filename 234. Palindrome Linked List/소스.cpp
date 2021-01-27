@@ -15,18 +15,19 @@ struct ListNode {
 class Solution {
 public:
 	bool isPalindrome(ListNode* head) {
+		
+		ListNode* fast = head, *slow = head;
 
-		ListNode* slow = head, * fast = head;
 		while (fast != NULL && fast->next != NULL) {
 			slow = slow->next;
 			fast = fast->next->next;
 		}
-		
+
 		if (fast != NULL) {
 			slow = slow->next;
 		}
-
-		slow = rsv(slow);
+	
+		slow = rvs(slow);
 		fast = head;
 
 		while (slow != NULL) {
@@ -38,18 +39,19 @@ public:
 		return true;
 	}
 
-	ListNode* rsv(ListNode* head) {
+	ListNode* rvs(ListNode* head) {
 		ListNode* prev = NULL;
 
-		while (head != NULL) {
+		while (head!= NULL) {
 			ListNode* temp = head->next;
 			head->next = prev;
 			prev = head;
 			head = temp;
 		}
-
+		
 		return prev;
 	}
+
 };
 
 int main() {
