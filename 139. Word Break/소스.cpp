@@ -26,7 +26,7 @@ public:
 		string tempStr;
 		for (int i = start; i < s.length(); i++) {
 			tempStr += s[i];
-			if (wordSet.count(tempStr) && canBreak(i + 1, s, wordSet))
+			if ( (wordSet.find(tempStr)!= wordSet.end()) && canBreak(i + 1, s, wordSet))
 				return dp[start] = 1;
 		}
 
