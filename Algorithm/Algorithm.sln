@@ -161,6 +161,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "138. Copy List with Random 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "142. Linked List Cycle II", "..\142. Linked List Cycle II\142. Linked List Cycle II.vcxproj", "{DBA8ABB6-28BB-4521-9128-A635052A2AEE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "221. Maximal Square", "..\221. Maximal Square\221. Maximal Square.vcxproj", "{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -801,6 +803,14 @@ Global
 		{DBA8ABB6-28BB-4521-9128-A635052A2AEE}.Release|x64.Build.0 = Release|x64
 		{DBA8ABB6-28BB-4521-9128-A635052A2AEE}.Release|x86.ActiveCfg = Release|Win32
 		{DBA8ABB6-28BB-4521-9128-A635052A2AEE}.Release|x86.Build.0 = Release|Win32
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Debug|x64.ActiveCfg = Debug|x64
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Debug|x64.Build.0 = Debug|x64
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Debug|x86.ActiveCfg = Debug|Win32
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Debug|x86.Build.0 = Debug|Win32
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Release|x64.ActiveCfg = Release|x64
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Release|x64.Build.0 = Release|x64
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Release|x86.ActiveCfg = Release|Win32
+		{C24DB6FF-2C63-44A1-8DFB-5E1E5BEDDFEB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
