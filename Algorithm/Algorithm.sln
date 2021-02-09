@@ -165,6 +165,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "221. Maximal Square", "..\2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "328. Odd Even Linked List", "..\328. Odd Even Linked List\328. Odd Even Linked List.vcxproj", "{DB916D74-5386-4270-AF44-CCD8059D3C54}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "877. Stone Game", "..\877. Stone Game\877. Stone Game.vcxproj", "{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -821,6 +823,14 @@ Global
 		{DB916D74-5386-4270-AF44-CCD8059D3C54}.Release|x64.Build.0 = Release|x64
 		{DB916D74-5386-4270-AF44-CCD8059D3C54}.Release|x86.ActiveCfg = Release|Win32
 		{DB916D74-5386-4270-AF44-CCD8059D3C54}.Release|x86.Build.0 = Release|Win32
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Debug|x64.ActiveCfg = Debug|x64
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Debug|x64.Build.0 = Debug|x64
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Debug|x86.ActiveCfg = Debug|Win32
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Debug|x86.Build.0 = Debug|Win32
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Release|x64.ActiveCfg = Release|x64
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Release|x64.Build.0 = Release|x64
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Release|x86.ActiveCfg = Release|Win32
+		{0E331C8D-08D0-4D5D-B33C-D8A9D4E1496F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
