@@ -64,7 +64,7 @@ public:
 		
 		for (auto coin : coins) {
 			int res = change(coins, amount - coin);
-			if (res >= 0 && res < num)
+			if (res >= 0 )
 				num = min(num, res + 1);
 		}
 
