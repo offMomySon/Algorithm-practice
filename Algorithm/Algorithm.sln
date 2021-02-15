@@ -173,6 +173,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "322. Coin Change", "..\322.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "85. Maximal Rectangle", "..\85. Maximal Rectangle\85. Maximal Rectangle.vcxproj", "{C538EF1D-0C7A-48FD-83DD-A1279FB19753}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "435. Non-overlapping Intervals", "..\435. Non-overlapping Intervals\435. Non-overlapping Intervals.vcxproj", "{90E66C7D-8012-47B8-BDB8-929C27A3C209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -861,6 +863,14 @@ Global
 		{C538EF1D-0C7A-48FD-83DD-A1279FB19753}.Release|x64.Build.0 = Release|x64
 		{C538EF1D-0C7A-48FD-83DD-A1279FB19753}.Release|x86.ActiveCfg = Release|Win32
 		{C538EF1D-0C7A-48FD-83DD-A1279FB19753}.Release|x86.Build.0 = Release|Win32
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Debug|x64.ActiveCfg = Debug|x64
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Debug|x64.Build.0 = Debug|x64
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Debug|x86.ActiveCfg = Debug|Win32
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Debug|x86.Build.0 = Debug|Win32
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Release|x64.ActiveCfg = Release|x64
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Release|x64.Build.0 = Release|x64
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Release|x86.ActiveCfg = Release|Win32
+		{90E66C7D-8012-47B8-BDB8-929C27A3C209}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
