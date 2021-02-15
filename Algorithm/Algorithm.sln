@@ -177,6 +177,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "435. Non-overlapping Interv
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "113. Path Sum II", "..\113. Path Sum II\113. Path Sum II.vcxproj", "{628E9D08-5C2F-404E-9FE3-77574A30B564}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "513. Find Bottom Left Tree Value", "..\513. Find Bottom Left Tree Value\513. Find Bottom Left Tree Value.vcxproj", "{A3297E62-A793-4B11-8FA5-01B602FC0ED5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -881,6 +883,14 @@ Global
 		{628E9D08-5C2F-404E-9FE3-77574A30B564}.Release|x64.Build.0 = Release|x64
 		{628E9D08-5C2F-404E-9FE3-77574A30B564}.Release|x86.ActiveCfg = Release|Win32
 		{628E9D08-5C2F-404E-9FE3-77574A30B564}.Release|x86.Build.0 = Release|Win32
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Debug|x64.ActiveCfg = Debug|x64
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Debug|x64.Build.0 = Debug|x64
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Debug|x86.ActiveCfg = Debug|Win32
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Debug|x86.Build.0 = Debug|Win32
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Release|x64.ActiveCfg = Release|x64
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Release|x64.Build.0 = Release|x64
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Release|x86.ActiveCfg = Release|Win32
+		{A3297E62-A793-4B11-8FA5-01B602FC0ED5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
