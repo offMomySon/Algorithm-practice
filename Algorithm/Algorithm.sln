@@ -187,6 +187,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "62. Unique Paths", "..\62. 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "409. Longest Palindrome", "..\409. Longest Palindrome\409. Longest Palindrome.vcxproj", "{3462460B-A8FA-4C07-89A9-A401F5079AB0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "413. Arithmetic Slices", "..\413. Arithmetic Slices\413. Arithmetic Slices.vcxproj", "{4FA73C7F-8F22-4503-A091-06238766249D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -931,6 +933,14 @@ Global
 		{3462460B-A8FA-4C07-89A9-A401F5079AB0}.Release|x64.Build.0 = Release|x64
 		{3462460B-A8FA-4C07-89A9-A401F5079AB0}.Release|x86.ActiveCfg = Release|Win32
 		{3462460B-A8FA-4C07-89A9-A401F5079AB0}.Release|x86.Build.0 = Release|Win32
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Debug|x64.ActiveCfg = Debug|x64
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Debug|x64.Build.0 = Debug|x64
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Debug|x86.Build.0 = Debug|Win32
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Release|x64.ActiveCfg = Release|x64
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Release|x64.Build.0 = Release|x64
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Release|x86.ActiveCfg = Release|Win32
+		{4FA73C7F-8F22-4503-A091-06238766249D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
