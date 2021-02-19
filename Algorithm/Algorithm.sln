@@ -183,6 +183,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "746. Min Cost Climbing Stai
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1010. Pairs of Songs With Total", "..\1010. Pairs of Songs With Total\1010. Pairs of Songs With Total.vcxproj", "{0DF5D492-FBF1-4347-BDD1-1D8D8D2DDA8B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "62. Unique Paths", "..\62. Unique Paths\62. Unique Paths.vcxproj", "{E9B121BD-6B75-4947-A513-8A1388D238AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -911,6 +913,14 @@ Global
 		{0DF5D492-FBF1-4347-BDD1-1D8D8D2DDA8B}.Release|x64.Build.0 = Release|x64
 		{0DF5D492-FBF1-4347-BDD1-1D8D8D2DDA8B}.Release|x86.ActiveCfg = Release|Win32
 		{0DF5D492-FBF1-4347-BDD1-1D8D8D2DDA8B}.Release|x86.Build.0 = Release|Win32
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Debug|x64.ActiveCfg = Debug|x64
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Debug|x64.Build.0 = Debug|x64
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Debug|x86.ActiveCfg = Debug|Win32
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Debug|x86.Build.0 = Debug|Win32
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Release|x64.ActiveCfg = Release|x64
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Release|x64.Build.0 = Release|x64
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Release|x86.ActiveCfg = Release|Win32
+		{E9B121BD-6B75-4947-A513-8A1388D238AA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
