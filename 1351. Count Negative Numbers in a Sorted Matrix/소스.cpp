@@ -4,7 +4,8 @@
 using namespace std;
 //시작시작 - 03:00
 //날짜 - 2021/02/24
-//실수 - binary search 시 base case 에 대해잘못 생각함.
+//실수 - binary search 시 base case 에 대해잘못 생각함. , key 가 0보다 작은 경우 right value 설정을 잘못 생각함.
+//참조 - https://blog.joonas.io/153
 class Solution {
 public:
 	int countNegatives(vector<vector<int>>& grid) {
