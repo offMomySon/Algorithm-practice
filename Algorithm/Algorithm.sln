@@ -193,6 +193,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1732. Find the Highest Alti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1351. Count Negative Numbers in a Sorted Matrix", "..\1351. Count Negative Numbers in a Sorted Matrix\1351. Count Negative Numbers in a Sorted Matrix.vcxproj", "{0DE40945-5E09-4ED8-9526-FC9C7DFA9A17}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1337. The K Weakest Rows in a Matrix", "..\1337. The K Weakest Rows in a Matrix\1337. The K Weakest Rows in a Matrix.vcxproj", "{395E1D7F-6166-4209-AC97-D8561E89FD69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -961,6 +963,14 @@ Global
 		{0DE40945-5E09-4ED8-9526-FC9C7DFA9A17}.Release|x64.Build.0 = Release|x64
 		{0DE40945-5E09-4ED8-9526-FC9C7DFA9A17}.Release|x86.ActiveCfg = Release|Win32
 		{0DE40945-5E09-4ED8-9526-FC9C7DFA9A17}.Release|x86.Build.0 = Release|Win32
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Debug|x64.ActiveCfg = Debug|x64
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Debug|x64.Build.0 = Debug|x64
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Debug|x86.ActiveCfg = Debug|Win32
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Debug|x86.Build.0 = Debug|Win32
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Release|x64.ActiveCfg = Release|x64
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Release|x64.Build.0 = Release|x64
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Release|x86.ActiveCfg = Release|Win32
+		{395E1D7F-6166-4209-AC97-D8561E89FD69}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
