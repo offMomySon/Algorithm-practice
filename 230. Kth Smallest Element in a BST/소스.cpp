@@ -2,6 +2,14 @@
 #include<vector>
 
 
+//날짜 - 2021/02/26
+//시작 - 11:20
+//종료 - 11:28
+//실수 - 
+//참조 - 
+using namespace std;
+
+
 struct TreeNode {
 	int val;
 	TreeNode* left;
@@ -12,34 +20,31 @@ struct TreeNode {
 	
 };
 
+
 class Solution {
 public:
 	int kthSmallest(TreeNode* root, int k) {
 		int count = 0;
-		return searchTree(root, k, count);
+		
+		return binarySearch(root, k, count);
 	}
 
-private:
-	int searchTree(TreeNode* root, int &k, int &count) {
-		if (root == NULL) {
+	int binarySearch(TreeNode* node, int k, int &count) {
+		if (node == nullptr)
 			return -1;
-		}
 
-		int res = searchTree(root->left, k, count);
+		int res = binarySearch(node->left, k, count);
 		if (res != -1) {
 			return res;
 		}
 
 		count++;
-		if (k == count) {
-			return root->val;
-		}
+		if (count == k)
+			return node->val;
 
-		return searchTree(root->right, k, count);
+		return binarySearch(node->right, k, count);
 	}
 };
-
-using namespace std;
 
 int main() {
 
