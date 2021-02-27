@@ -201,6 +201,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "852. Peak Index in a Mounta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "349. Intersection of Two Arrays", "..\349. Intersection of Two Arrays\349. Intersection of Two Arrays.vcxproj", "{1D3B2E1E-44B3-4F46-9F21-E65B15415762}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1011. Capacity To Ship Packages Within D Days", "..\1011. Capacity To Ship Packages Within D Days\1011. Capacity To Ship Packages Within D Days.vcxproj", "{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1001,6 +1003,14 @@ Global
 		{1D3B2E1E-44B3-4F46-9F21-E65B15415762}.Release|x64.Build.0 = Release|x64
 		{1D3B2E1E-44B3-4F46-9F21-E65B15415762}.Release|x86.ActiveCfg = Release|Win32
 		{1D3B2E1E-44B3-4F46-9F21-E65B15415762}.Release|x86.Build.0 = Release|Win32
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Debug|x64.ActiveCfg = Debug|x64
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Debug|x64.Build.0 = Debug|x64
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Debug|x86.Build.0 = Debug|Win32
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Release|x64.ActiveCfg = Release|x64
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Release|x64.Build.0 = Release|x64
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Release|x86.ActiveCfg = Release|Win32
+		{6B20DF7A-7F6B-43B4-AC81-C88CE323E069}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
