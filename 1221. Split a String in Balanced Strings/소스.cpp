@@ -13,20 +13,12 @@ class Solution {
 public:
     int balancedStringSplit(string s) {
         int maximum_Amount = 0;
+        int cnt = 0;
 
-        int judge = 0;
-        if (s.at(0) == 'R')
-            judge++;
-        else
-            judge--;
+        for (const auto &ch : s) {
+            cnt += ch == 'R' ? 1 : -1;
 
-        for (int i = 1; i < s.length(); i++) {
-            if (s[i] == 'R')
-                judge++;
-            else
-                judge--;
-
-            if (judge == 0)
+            if (cnt == 0)
                 maximum_Amount++;
         }
 
