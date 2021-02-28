@@ -209,6 +209,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1482. Minimum Number of Day
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1769. Minimum Number of Operations to Move All Balls to Each Box", "..\1769. Minimum Number of Operations to Move All Balls to Each Box\1769. Minimum Number of Operations to Move All Balls to Each Box.vcxproj", "{8DA9B35C-7CCA-40AF-A419-F07F948E1069}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1221. Split a String in Balanced Strings", "..\1221. Split a String in Balanced Strings\1221. Split a String in Balanced Strings.vcxproj", "{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1041,6 +1043,14 @@ Global
 		{8DA9B35C-7CCA-40AF-A419-F07F948E1069}.Release|x64.Build.0 = Release|x64
 		{8DA9B35C-7CCA-40AF-A419-F07F948E1069}.Release|x86.ActiveCfg = Release|Win32
 		{8DA9B35C-7CCA-40AF-A419-F07F948E1069}.Release|x86.Build.0 = Release|Win32
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Debug|x64.ActiveCfg = Debug|x64
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Debug|x64.Build.0 = Debug|x64
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Debug|x86.ActiveCfg = Debug|Win32
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Debug|x86.Build.0 = Debug|Win32
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Release|x64.ActiveCfg = Release|x64
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Release|x64.Build.0 = Release|x64
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Release|x86.ActiveCfg = Release|Win32
+		{3977BEFC-3BFF-4D26-BB19-8F326185C2A9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
