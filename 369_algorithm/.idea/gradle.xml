@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/15649_N과 M (1)" />
             <option value="$PROJECT_DIR$/15651_N과 M (3)" />
           </set>
         </option>
