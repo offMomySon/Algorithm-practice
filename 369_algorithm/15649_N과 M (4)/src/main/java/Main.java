@@ -2,63 +2,60 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 public class Main {
-
     private static FastScanner fs;
     private static StringBuffer sb;
     private static int N,M;
-    private static int[] selected;
+    private static int[] visited;
 
-    public static void input(){
+    private static void input(){
         fs = new FastScanner();
         sb = new StringBuffer();
         N = fs.nextInt();
         M = fs.nextInt();
-        selected = new int[M+1];
+        visited = new int[M+1];
     }
 
-    static void recFunc(int k){
-        if(k==M+1){
-            for (int i = 1; i <= M; i++) {
-                sb.append(selected[i]).append(" ");
+    private static void rec_func(int k){
+        if(M+1 == k){
+            for (int i = 1; i <= M ; i++) {
+                sb.append(visited[i]).append(" ");
             }
             sb.append("\n");
             return;
         }
 
-        for(int cand = 1; cand <= N; cand++){
-            selected[k] = cand;
-            recFunc(k+1);
-            selected[k] = 0;
+        int start = visited[k-1] == 0 ?1:visited[k-1];
+
+        for (int cand = start; cand <= N; cand++) {
+            visited[k] = cand;
+            rec_func(k+1);
+            visited[k] = 0;
         }
     }
 
     public static void main(String[] args) {
         input();
 
-        recFunc(1);
+        rec_func(1);
 
         System.out.println(sb.toString());
     }
 
-
     static class FastScanner{
-        private BufferedReader bf;
         private StringTokenizer st;
-
+        private BufferedReader br;
 
         public FastScanner() {
-            this.bf = new BufferedReader(new InputStreamReader(System.in));
+            br = new BufferedReader(new InputStreamReader(System.in));
         }
-
         public FastScanner(String f) throws FileNotFoundException {
-            this.bf = new BufferedReader(new FileReader(new File(f)));
+            br = new BufferedReader(new FileReader(new File(f)));
         }
 
-        public String next(){
-            String str = "";
-            while((st == null || !st.hasMoreTokens())) {
+        private String next(){
+            while((st == null || !st.hasMoreTokens())){
                 try {
-                    st = new StringTokenizer(bf.readLine());
+                    st = new StringTokenizer(br.readLine());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -75,15 +72,14 @@ public class Main {
         public double nextDouble(){
             return Double.parseDouble(next());
         }
-        public String nextLine(){
+        public String readLine(){
             String str = "";
             try {
-                str = bf.readLine();
+                str = br.readLine();
             } catch (IOException e) {
                 e.printStackTrace();
             }
             return str;
         }
     }
-
 }
