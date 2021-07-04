@@ -1,42 +1,52 @@
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
-    private static FastScanner fs;
-    private static int N, S, COUNT;
-    private static int[] nums;
+    private static FastScanner fs = new FastScanner();
+    private static int N,M;
+    private static int[] N_group;
+    private static int[] M_group;
 
     private static void input(){
-        fs = new FastScanner();
-
         N = fs.nextInt();
-        S = fs.nextInt();
-        nums = new int[N+1];
-        for (int i = 1; i <=N; i++) nums[i] = fs.nextInt();
+        N_group = new int[N+1];
+        for (int i = 1; i <= N; i++) N_group[i] = fs.nextInt();
+
+        M = fs.nextInt();
+        M_group = new int[M+1];
+        for (int i = 1; i <= M; i++) M_group[i] = fs.nextInt();
     }
 
+    public static int binarySearch(int[] arr, int target){
+        int left = 1;
+        int right = arr.length-1;
 
-    static void rec_func(int k, int cur_value){
-        if(N+1 == k){
-            if(S == cur_value)
-                COUNT++;
-            return;
+        while(left<=right){
+            int mid = (left+right)/2;
+
+            if(arr[mid] == target)
+                return 1;
+
+            if(arr[mid] < target) {
+                left = mid+1;
+            }else if( target < arr[mid]) {
+                right = mid-1;
+            }
         }
 
-        rec_func(k+1, cur_value+ nums[k]);
-        rec_func(k+1, cur_value);
+        return 0;
     }
-
 
     public static void main(String[] args) {
         input();
 
-        rec_func(1,0);
+        Arrays.sort(N_group);
+//        Arrays.sort(M_group);
 
-        if(S == 0)
-            COUNT--;
-
-        System.out.println(COUNT);
+        for (int i = 1; i <= M_group.length-1; i++) {
+            System.out.println(binarySearch(N_group,M_group[i]));
+        }
     }
 
     static class FastScanner{
@@ -80,4 +90,5 @@ public class Main {
             return str;
         }
     }
+
 }

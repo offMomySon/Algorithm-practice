@@ -1,42 +1,64 @@
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
-    private static FastScanner fs;
-    private static int N, S, COUNT;
-    private static int[] nums;
+    private static FastScanner fs = new FastScanner();
+    private static int REPEAT_TEST_COUNT, aSize, bSize;
+    private static int left, right, count;
+    private static int[] A_group;
+    private static int[] B_group;
 
     private static void input(){
-        fs = new FastScanner();
+        aSize = fs.nextInt();
+        bSize = fs.nextInt();
+        count = 0;
 
-        N = fs.nextInt();
-        S = fs.nextInt();
-        nums = new int[N+1];
-        for (int i = 1; i <=N; i++) nums[i] = fs.nextInt();
+        A_group = new int[aSize+1];
+        B_group = new int[bSize+1];
+
+        left = 1;
+        right = bSize;
+
+        for (int i = 1; i <= aSize; i++) A_group[i] = fs.nextInt();
+        for (int i = 1; i <= bSize; i++) B_group[i] = fs.nextInt();
     }
 
 
-    static void rec_func(int k, int cur_value){
-        if(N+1 == k){
-            if(S == cur_value)
-                COUNT++;
-            return;
+    public static int lower_bound(int[] arr, int target){
+        int left = 1;
+        int right = arr.length-1;
+        int result = 0;
+
+        while(left<=right){
+            int mid = (left+right)/2;
+
+            if(arr[mid] < target){
+                result = mid;
+                left = mid+1;
+            } else if(target <= arr[mid]){
+                right = mid-1;
+            }
         }
 
-        rec_func(k+1, cur_value+ nums[k]);
-        rec_func(k+1, cur_value);
+        return result;
     }
 
-
     public static void main(String[] args) {
-        input();
+        REPEAT_TEST_COUNT = fs.nextInt();
 
-        rec_func(1,0);
+        for (int i = 0; i < REPEAT_TEST_COUNT; i++) {
+            input();
 
-        if(S == 0)
-            COUNT--;
+            Arrays.sort(A_group);
+            Arrays.sort(B_group);
 
-        System.out.println(COUNT);
+            for (int index = 1; index <= aSize ; index++) {
+                count += lower_bound(B_group, A_group[index]);
+            }
+
+            System.out.println(count);
+        }
     }
 
     static class FastScanner{
@@ -80,4 +102,5 @@ public class Main {
             return str;
         }
     }
+
 }
