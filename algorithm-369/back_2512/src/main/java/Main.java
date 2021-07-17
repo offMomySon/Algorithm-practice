@@ -62,7 +62,7 @@ public class Main {
         if(total_budget <= GOVERMENT_BUDGET){
             System.out.println(maxValueResult());
         }else{
-            System.out.println(lower_bound(budgets,1,100000));
+            System.out.println(lower_bound(budgets,1,1000000000));
         }
     }
 

@@ -50,7 +50,7 @@ public class Main {
 
         Arrays.sort(makgeolli, 1, makgeolli.length);
 
-        System.out.println(lower_bound(makgeolli,0,Integer.MAX_VALUE));
+        System.out.println(lower_bound(makgeolli,0,makgeolli[makgeolli.length-1]));
     }
 
     static class FastScanner{

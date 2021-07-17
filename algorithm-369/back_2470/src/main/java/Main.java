@@ -46,7 +46,7 @@ public class Main {
 
             // 존재하지 않는경우.
             // right_idx 조정
-//            if(right_idx == N+1) right_idx = N;
+//                if(right_idx == N+1) right_idx = N;
 
 
             // 결과 값이 최적이면 index 를 바꿈.

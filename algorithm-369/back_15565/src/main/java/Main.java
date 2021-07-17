@@ -13,7 +13,6 @@ public class Main {
 
         nums = new int[N+1];
         for (int i = 1; i <= N; i++) nums[i] = fs.nextInt();
-
     }
 
     private static void pro(){
