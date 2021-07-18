@@ -11,6 +11,7 @@ public class Main {
     private static int[][] map;
     private static boolean[][] visited;
     private static int ans = 0;
+    private static ArrayList<Point> blank;
     private static ArrayList<Point> virus = new ArrayList<>();
     private static int[][] dirs = {{-1,0},{0,1},{1,0},{0,-1}};
 
@@ -86,6 +87,41 @@ public class Main {
             }
         }
         ans = Math.max(ans, cnt);
+    }
+
+    private static void dfs2(int idx, int select_cnt){
+        if(select_cnt == 3){
+            bfs();
+            return;
+        }
+        if(idx >= blank.size()) return;
+
+        for (int i = 0; i < blank.size(); i++) {
+            Point point = blank.get(i);
+
+            int row = point.row;
+            int col = point.col;
+
+            map[row][col] = 1;
+            dfs2(i+1, select_cnt+1);
+
+            map[row][col] = 0;
+            dfs2(i+1, select_cnt);
+        }
+
+    }
+
+    private static void pro2(){
+        blank = new ArrayList<>();
+
+        for (int i = 0; i < ROW; i++) {
+            for (int j = 0; j < COL; j++) {
+                if(map[i][j] == 0) blank.add(new Point(i,j));
+            }
+        }
+
+        dfs2(0,0);
+        System.out.println(ans);
     }
 
     private static void pro(){
