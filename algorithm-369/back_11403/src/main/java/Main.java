@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -7,6 +9,7 @@ public class Main {
     private static int N;
     private static int [][] map;
     private static int [][] ans;
+    private static boolean[] visited;
 
     public static void input(){
         N = fr.nextInt();
@@ -33,6 +36,44 @@ public class Main {
         }
     }
 
+    private static void bfs(int v){
+        Queue<Integer> q = new LinkedList<>();
+        q.add(v);
+
+        for (int i = 0; i < visited.length; i++) {
+            visited[i] = false;
+        }
+
+        while(!q.isEmpty()){
+            int currV = q.poll();
+
+            for (int nextV = 0; nextV < map[currV].length; nextV++) {
+                if(map[currV][nextV] == 0) continue;
+                if(visited[nextV]) continue;
+
+                q.add(nextV);
+                visited[nextV] = true;
+            }
+        }
+
+        for (int i = 0; i < visited.length; i++) {
+            if(visited[i]) sb.append("1");
+            else sb.append("0");
+            sb.append(" ");
+        }
+        sb.append("\n");
+    }
+
+    public static void pro2(){
+        visited = new boolean[N];
+
+        for (int v = 0; v < map.length; v++) {
+            bfs(v);
+        }
+
+        System.out.println(sb);
+    }
+
     public static void pro(){
         for (int row = 0; row < N; row++) {
             dfs(row, row, true);
@@ -50,7 +91,8 @@ public class Main {
 
     public static void main(String[] args) {
         input();
-        pro();
+        //pro();
+        pro2();
     }
 
 
