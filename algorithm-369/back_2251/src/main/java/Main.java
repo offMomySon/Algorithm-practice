@@ -112,10 +112,6 @@ class WaterCans{
         this.capacity[2] = capacity[2];
     }
 
-    public int[] getCapacity(){
-        return capacity;
-    }
-
     public WaterCans move(int from, int to , int[] LIMITS){
         int[] _nx = new int[]{capacity[0], capacity[1], capacity[2]};
 
