@@ -5,114 +5,55 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
-    private static FastReader fr = new FastReader();
-    private static StringBuilder sb = new StringBuilder();
-    private static int N;
-    private static int[] parent;
-    private static boolean[] visited;
-    private static ArrayList<Integer>[] adj;
+    public static FastReader fr = new FastReader();
+    public static ArrayList<Integer>[] adj;
+    public static int[] parent;
+    public static int N;
 
-    private static void input(){
+    public static void input(){
         N = fr.nextInt();
 
-        visited = new boolean[N+1];
-
         parent = new int[N+1];
-        for (int i = 1; i <= N; i++) {
+        adj = new ArrayList[N+1];
+
+        for (int i = 0; i <= N; i++) {
+            adj[i] = new ArrayList<>();
             parent[i] = -1;
         }
 
-        adj = new ArrayList[N+1];
-        for (int i = 0; i <adj.length ; i++) {
-            adj[i] = new ArrayList<>();
-        }
-
         for (int i = 1; i <= N-1; i++) {
-            int x = fr.nextInt();
-            int y = fr.nextInt();
+            int node_one = fr.nextInt();
+            int node_two = fr.nextInt();
 
-            adj[x].add(y);
-            adj[y].add(x);
+            adj[node_one].add(node_two);
+            adj[node_two].add(node_one);
         }
     }
 
-    private static boolean dfs(int v){
-        if(v == 1) return true;
-
-        visited[v] = true;
-
-        for(int nextV : adj[v]){
-            if(visited[nextV]) continue;
-
-            if(parent[nextV] !=-1){
-                parent[v] = nextV;
-                return true;
-            }
-
-            if(dfs(nextV)){
-                parent[v] = nextV;
-                return true;
-            }else{
-                parent[nextV] = v;
-            }
+    public static void dfs(int cur, int par){
+        parent[cur] = par;
+        
+        for(int child : adj[cur]){
+            if(child == par) continue;
+            dfs(child,cur);
         }
-
-        return false;
     }
 
-    private static void bfs(int v){
-        Queue<Integer> q = new LinkedList<>();
-        q.add(v);
-        visited[v] = true;
-
-        while(!q.isEmpty()){
-            int curV = q.poll();
-
-            for(int nextV : adj[curV]){
-                if(visited[nextV]) continue;
-
-                q.add(nextV);
-                parent[nextV] = curV;
-                visited[nextV] = true;
-            }
-
-        }
-
-    }
-
-    private static void pro2(){
-
-        bfs(1);
+    public static void pro(){
+        
+        dfs(1,-1);
 
         for (int i = 2; i <= N; i++) {
-            sb.append(parent[i]).append("\n");
-        }
-        System.out.println(sb.toString());
-    }
-
-    private static void pro(){
-
-        for (int i = 2; i <= N ; i++) {
-            if(parent[i] != -1) continue;
-
-            for (int j = 0; j < visited.length; j++) {
-                visited[j] = false;
-            }
-            dfs(i);
+            System.out.println(parent[i]);
         }
 
-        for (int i = 2; i <= N; i++) {
-            sb.append(parent[i]).append("\n");
-        }
-        System.out.println(sb.toString());
+
     }
 
     public static void main(String[] args) {
         input();
-        //pro();
-        pro2();
+        pro();
     }
-
 
     static class FastReader{
         private BufferedReader br;
@@ -125,7 +66,7 @@ public class Main {
             br = new BufferedReader(new FileReader(new File(f)));
         }
 
-        public String next(){
+        private String next(){
             while(st == null || !st.hasMoreElements()){
                 try {
                     st = new StringTokenizer(br.readLine());
@@ -136,16 +77,16 @@ public class Main {
             return st.nextToken();
         }
 
-        public int nextInt(){
+        private int nextInt(){
             return Integer.parseInt(next());
         }
-        public double nextDouble(){
-            return Double.parseDouble(next());
-        }
-        public long nextLong(){
+        private long nextLong(){
             return Long.parseLong(next());
         }
-        public String nextLine(){
+        private double nextDouble(){
+            return Double.parseDouble(next());
+        }
+        private String nextLine(){
             String str = "";
             try {
                 str = br.readLine();
@@ -155,5 +96,4 @@ public class Main {
             return str;
         }
     }
-
 }
