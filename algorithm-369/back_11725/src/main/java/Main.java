@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 public class Main {
     public static FastReader fr = new FastReader();
+    public static  BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
     public static ArrayList<Integer>[] adj;
     public static int[] parent;
     public static int N;
