@@ -1,71 +1,69 @@
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.StringTokenizer;
-import java.util.stream.Collectors;
+
+//날짜 - 2021/08/01
+//시작 - 17:19
+//종료 - 17:36
+//실수 -
+// 1) ROOT node 의 size 가 1 인 케이스에서 예외 처리를 하지않았습니다.
+// 2) DP 점화식으로 코드를 구현하지 않음. - DP 로 변경후 불필요한 return 문 사라짐.
+//참조 -
 
 public class Main {
-    private static FastReader fr = new FastReader();
+    private static int N, ROOT, LOOP;
+    private static ArrayList<Integer>[] adj;
+    private static FastReader fr  = new FastReader();
     private static StringBuilder sb = new StringBuilder();
-    private static int N, ROOT, ERASE;
-    private static int[] parent;
-    private static ArrayList<Integer>[] child;
-    private static int[] leaf;
+    private static int[] count;
 
     private static void input(){
         N = fr.nextInt();
+        ROOT = fr.nextInt();
+        LOOP = fr.nextInt();
 
-        parent = new int[N+1];
-        child = new ArrayList[N+1];
-        for (int i = 0; i < child.length ; i++) {
-            child[i] = new ArrayList<>();
+        adj = new ArrayList[N+1];
+        for (int i = 0; i < adj.length ; i++) {
+            adj[i] = new ArrayList<>();
         }
-        leaf = new int[N+1];
+        count = new int[N+1];
 
-        for (int i = 0; i < N; i++) {
-            parent[i] = fr.nextInt();
+        for (int i = 1; i <= N-1; i++) {
+            int x = fr.nextInt();
+            int y = fr.nextInt();
 
-            if(parent[i] == -1){
-                ROOT  = i;
-                continue;
-            }
-
-            child[parent[i]].add(i);
+            adj[x].add(y);
+            adj[y].add(x);
         }
-
-        ERASE = fr.nextInt();
     }
 
+    private static void dfs(int cur, int parent){
+        count[cur] = 1;
 
-    private static void dfs(int cur){
-        if(child[cur].size() == 0){
-            leaf[cur]++;
-            return;
-        }
-
-        for(int next : child[cur]){
-            dfs(next);
-            leaf[cur] += leaf[next];
+        for(int next : adj[cur]){
+            if(next == parent) continue;
+            dfs(next,cur);
+            count[cur] += count[next];
         }
     }
 
     private static void pro(){
-        for (int i = 0; i < N; i++) {
-            if(child[i].contains(ERASE)){
-                child[i].remove(child[i].indexOf(ERASE));
-            }
+        dfs(ROOT,-1);
+
+        for (int i = 0; i < LOOP; i++) {
+            int target = fr.nextInt();
+
+            sb.append(count[target]).append("\n");
         }
 
-        if(ROOT != ERASE) dfs(ROOT);
-
-        System.out.println(leaf[ROOT]);
+        System.out.println(sb.toString());
     }
 
     public static void main(String[] args) {
         input();
         pro();
     }
+
 
     static class FastReader{
         private BufferedReader bf;
