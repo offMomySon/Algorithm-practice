@@ -57,7 +57,6 @@ public class Main {
         }
     }
 
-
     static class FastReader{
         private BufferedReader bf;
         private StringTokenizer st;
@@ -97,9 +96,7 @@ public class Main {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
             return str;
         }
-
     }
 }
